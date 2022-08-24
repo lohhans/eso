@@ -1,0 +1,36 @@
+Estilo LaTeX de TCCs e relatórios ESOs do curso de Computação UAG UFRPE.
+Em caso de dúvida contate rian.gabriel@gmail.com 
+
+USE:
+
+\documentclass{bcc} para TCC e
+
+\documentclass[eso]{bcc} para ESOs
+
+Os comandos oriterador e examinador funcionam para ambos documentos. Ex:
+
+
+\orientador{Alan Turing}{UAG}{UFRPE}
+
+Caso oriterador/examinador feminino use *. Ex:
+
+
+\orientador*{Ada Lovelace}{UAG}{UFRPE}
+
+
+No caso de ESO use:
+
+
+\empresaNome{Google}
+\empresaArea{Web}
+\empresaPeriodo{7 de janeiro a 7 de julho de 2016}
+\empresaCargaH{40H}
+\empresaRemuneracao{R\$ 1.000,00}
+\empresaSupervisorEmail{tanembaum@googlgle.com}
+\logo{Figuras/logo_da_empresa}{0.88}
+
+
+Para preencher a tabela na folha de rosto.
+
+
+Dê preferência para figuras .ps e .eps. Nestes casos compile com latex.

@@ -1,0 +1,98 @@
+\documentclass{bcc}
+
+\newcommand{\citeabnt}[1]{(\textsc{\citeauthor{#1}}, \citeyear{#1})}
+\newcommand{\citetabnt}[1]{\citeauthor{#1} (\citeyear{#1})}
+
+\titulo{Título do trabalho alinhando com o que foi realizado\newline
+RELATÓRIO DE ESTÁGIO SUPERVISIONADO OBRIGATÓRIO (ESO)}
+
+\palavrasChave{Automação}{Agilidade}{Auto atendimento}
+\keywords{keyword1, keyword2, keyword3.}
+
+\autor{Nome Completo do Aluno}{email@gmail.com}
+
+\orientador{Nome Professor}{}{UFAPE}
+\orientadorDois{Nome Professor}{}{UFAPE}
+
+
+\examinador{John Hopcroft}{}{UFAPE}
+\examinadorDois{Richard Karp}{}{UFAPE}
+\examinadorTres{Stephen Cook}{}{UFAPE}
+
+\dataMesAno{31}{maio}{2022}
+
+\begin{document}
+
+\selectlanguage{portuguese}
+
+\capa
+
+% \capaDois
+
+\begin{resumo}
+Descrição do seu trabalho
+\end{resumo}
+
+\selectlanguage{english}
+\begin{abstract}
+Works Description
+\end{abstract}
+\selectlanguage{portuguese}
+
+% Centralizar titulos
+\renewcommand\contentsname{\centerline{Sumário}}
+\renewcommand\listfigurename{\centerline{Lista de Figuras}}
+\renewcommand\listtablename{\centerline{Lista de Tabelas}}
+
+\lhead{Sumário}
+\tableofcontents
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+
+\listoftables
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+
+\inicio
+\chapter{Introdução}
+
+Texto
+
+\section {Objetivo}
+
+O objetivo geral
+
+
+\section{Justificativa}
+
+Este trabalho se justifica.
+
+\section{Organização do TCC}
+
+
+\chapter{Fundamentação teórica}
+\label{chap:fundamentacao}
+
+Nesta 
+
+\chapter{A proposta do trabalho}
+\label{chap:sistema}
+A proposta deste trabalho
+
+\chapter{Conclusões}
+\label{chap:conclusao}
+
+Considerações Finais
+
+
+
+\bibliographystyle{estilo_ABNT}
+\bibliography{refs}
+\addcontentsline{toc}{chapter}{Referências Bibliográficas}
+
+\appendix
+\chapter{Apêndice}\label{ane:relatorio}
+Este é o Apêndice.
+
+\end{document}
+
