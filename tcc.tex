@@ -1,15 +1,14 @@
-\documentclass{bcc}
+\documentclass[eso]{bcc}
 
 \newcommand{\citeabnt}[1]{(\textsc{\citeauthor{#1}}, \citeyear{#1})}
 \newcommand{\citetabnt}[1]{\citeauthor{#1} (\citeyear{#1})}
 
-\titulo{Título do trabalho alinhando com o que foi realizado\newline
-RELATÓRIO DE ESTÁGIO SUPERVISIONADO OBRIGATÓRIO (ESO)}
+\titulo{RELATÓRIO DE ESTÁGIO SUPERVISIONADO OBRIGATÓRIO (ESO)}
 
 \palavrasChave{Automação}{Agilidade}{Auto atendimento}
 \keywords{keyword1, keyword2, keyword3.}
 
-\autor{Nome Completo do Aluno}{email@gmail.com}
+\autor{Armstrong Lohãns de Melo Gomes Quintino}{lohansdemelo1108@gmail.com}
 
 \orientador{Nome Professor}{}{UFAPE}
 \orientadorDois{Nome Professor}{}{UFAPE}
@@ -25,7 +24,15 @@ RELATÓRIO DE ESTÁGIO SUPERVISIONADO OBRIGATÓRIO (ESO)}
 
 \selectlanguage{portuguese}
 
-\capa
+\empresaNome{Google}
+\empresaArea{Web}
+\empresaPeriodo{7 de janeiro a 7 de julho de 2016}
+\empresaCargaH{40H}
+\empresaRemuneracao{R\$ 1.000,00}
+\empresaSupervisorEmail{tanembaum@googlgle.com}
+\logo{Figuras/UFAPE_logo.png}{0.88}
+
+\capa % With error if not completely filled
 
 % \capaDois
 
@@ -73,7 +80,7 @@ Este trabalho se justifica.
 \chapter{Fundamentação teórica}
 \label{chap:fundamentacao}
 
-Nesta 
+Nesta
 
 \chapter{A proposta do trabalho}
 \label{chap:sistema}
@@ -85,7 +92,7 @@ A proposta deste trabalho
 Considerações Finais
 
 
-
+\nocite{*} % Ignore citations (remove if have any)
 \bibliographystyle{estilo_ABNT}
 \bibliography{refs}
 \addcontentsline{toc}{chapter}{Referências Bibliográficas}

@@ -3,10 +3,11 @@
 %% TCC do curso de Bacharelado em Ciência da Computação da Universidade        %%
 %% Federal Rural de Pernambuco                                                 %%
 %%                                                                             %%
-%% Autor:                                                                     %%
-%%       Rian Pinheiro - rian.gabriel@gmail.com                                %%
+%% Autor: Rian Pinheiro - rian.gabriel@gmail.com                               %%                                      %%
+%% Correções desta versão: Armstrong Lohãns - lohansdemelo1108@gmail.com       %%                                                        %%
 %%                                                                             %%
 %% Data: Julho de 2016                                                         %%
+%% Data das correções: Agosto de 2022                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -48,8 +49,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Modificações Avançadas %%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{amsmath} %
-\RequirePackage{amsthm} %	
-\RequirePackage{bbm} 
+\RequirePackage{amsthm} %
+\RequirePackage{bbm}
 \RequirePackage{amssymb} %
 \RequirePackage{amscd} %
 \RequirePackage{units} %
@@ -128,7 +129,7 @@
 %%------------------------------------------------------------------------------
 %%  TAMANHOS VERTICAIS - COPIADO DO ESTILO PADRÃO DA ABNT - Pacote abntex.cls
 %%------------------------------------------------------------------------------
-% A distancia entre o topo do cabeçalho e o topo do texto é de 1cm, 
+% A distancia entre o topo do cabeçalho e o topo do texto é de 1cm,
 % isto é, 1cm=\headheight+\headsep
 % ...mas, nós consideramos a profundidade do cabeçallho, adicionando 2mm.
 \setlength{\headsep}{1.2cm-\headheight}
@@ -145,7 +146,7 @@
 %%------------------------------------------------------------------------------
 % A margem esquerda é de 3cm e a direita é igual a 2cm.
 \setlength{\oddsidemargin}{3cm-\hoffset-1in}
-% para compatibilidade com impressão frente e verso, o tamanho das margens 
+% para compatibilidade com impressão frente e verso, o tamanho das margens
 %deve ser alterado
 \setlength{\evensidemargin}{2cm-\hoffset-1in}
 % \paperwidth=\textwidth+\oddsidemargin+\hoffset+1in+2cm
@@ -158,16 +159,16 @@
 \fancyhf{}
 
 % Define a aparição do nome da seção no cabeçalho(esquerda)
-\lhead{\nouppercase\rightmark} 
+\lhead{\nouppercase\rightmark}
 
 % Define a aparição do número da página no cabeçalho(direita)
 \rhead{\thepage} % Número da página
 
 % Define a largura da barra
-\renewcommand{\headrulewidth}{0.6pt} 
+\renewcommand{\headrulewidth}{0.6pt}
 
 % Define a altura do cabeçalho
-\addtolength{\headheight}{3.05pt} 
+\addtolength{\headheight}{3.05pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -188,7 +189,6 @@
      \vspace*{0.2cm} \large UNIVERSIDADE FEDERAL DO AGRESTE DE PERNAMBUCO \\
       \vspace*{4.5cm} \large  \textbf{\MakeUppercase \@autorNome} \\%
       \vspace*{4cm} \Large \textbf{\@titulo} \\%
-  
       \normalsize \vfill GARANHUNS \\
       \vspace*{.3cm} \@ano \\
       \vspace*{1.8cm}
@@ -250,22 +250,22 @@
     \end{center}
     \vspace*{2cm}
     \hspace{5 cm}%
-    
+
     \ifthenelse{\boolean{eso}}%
     {\vspace*{-1cm}
         \begin{center}{\setlength\extrarowheight{5pt}
         \begin{tabular}{|p{.14\linewidth}|p{.8\linewidth}|}
          \hline
-         \multirow{6}{*}{\@logo} & EMPRESA: \\ \cline{2-2}
-         & ÁREA DE ATUAÇÃO: \@empresaNome \\ \cline{2-2}
+         \multirow{6}{*}{\@logo} & EMPRESA: \@empresaNome \\ \cline{2-2}
+         & ÁREA DE ATUAÇÃO: \@empresaArea \\ \cline{2-2}
          & PERÍODO DE REALIZAÇÃO: \@empresaPeriodo \\ \cline{2-2}
          & CARGA HORÁRIA SEMANAL: \@empresaCargaH \\ \cline{2-2}
-         & REMUNERAÇÃO/AJUDA:  \@empresaRemuneracao \\ \cline{2-2}
-         & SUPERVISOR/E-MAIL:  \@empresaSupervisorEmail \\ \hline   
+         & REMUNERAÇÃO/AJUDA: \@empresaRemuneracao \\ \cline{2-2}
+         & SUPERVISOR/E-MAIL: \@empresaSupervisorEmail \\ \hline
         \end{tabular}
         }\end{center}}
         {}
-       \vspace*{1cm} 
+       \vspace*{1cm}
        \large%
        \hfill%
     \begin{minipage}{ 11 cm }%
@@ -388,7 +388,7 @@
     \setcounter{page}{1}%
     %Espaçamento 1,5
     \onehalfspacing%
-    \lhead{\nouppercase\rightmark} 
+    \lhead{\nouppercase\rightmark}
 }%
 
 
@@ -412,7 +412,7 @@
 \newcommand{\@orientadorInstituicao}{}
 \newcommand{\@orientadorSexo}{~}
 \NewDocumentCommand \orientador{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@orientadorSexo}{a}
@@ -438,7 +438,7 @@
 \newboolean{orientadorDoisExiste}
 \setboolean{orientadorDoisExiste}{false}
 \NewDocumentCommand \orientadorDois{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@orientadorDoisSexo}{a}
@@ -461,7 +461,7 @@
 \newboolean{orientadorTresExiste}
 \setboolean{orientadorTresExiste}{false}
 \NewDocumentCommand \orientadorTres{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@orientadorTresSexo}{a}
@@ -481,7 +481,7 @@
 \newcommand{\@examinadorInstituicao}{~}
 \newcommand{\@examinadorSexo}{~}
 \NewDocumentCommand \examinador{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@examinadorSexo}{a}
@@ -501,7 +501,7 @@
 \newboolean{examinadorDoisExiste}
 \setboolean{examinadorDoisExiste}{false}
 \NewDocumentCommand \examinadorDois{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@examinadorDoisSexo}{a}
@@ -523,7 +523,7 @@
 \newboolean{examinadorTresExiste}
 \setboolean{examinadorTresExiste}{false}
 \NewDocumentCommand \examinadorTres{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@examinadorTresSexo}{a}
@@ -545,7 +545,7 @@
 \newboolean{examinadorQuatroExiste}
 \setboolean{examinadorQuatroExiste}{false}
 \NewDocumentCommand \examinadorQuatro{ s mmm }
-{%  
+{%
   \IfBooleanT {#1}
   {%
     \renewcommand{\@examinadorQuatroSexo}{a}
@@ -587,13 +587,13 @@
       #2}
   \newcommand{\@palavrasChaveC}{
       #3}}
-      
+
 \newcommand{\@keywords}{}
 \newcommand{\keywords}[1]{
   \renewcommand{\@keywords}{
       #1}}
-   
-   
+
+
 \ifthenelse{\boolean{eso}}
 {
   \newcommand{\@texto}{Relatório de Estágio apresentado ao Curso de Ciência da Computação, como requisito necessário para avaliação final na disciplina de Estágio Supervisionado Obrigatório}
@@ -673,7 +673,7 @@
 
 
     \normalsize
-    %% Configura para utilizar o cabeçalho e rodapé definidos anteriormente.    
+    %% Configura para utilizar o cabeçalho e rodapé definidos anteriormente.
     \pagestyle{fancy}
     %% Define o módulo de citação abreviado(Harvard)
     %% \citationmode{abbr}
@@ -683,7 +683,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypersetup{
-%  
+%
 linktocpage = {false},
 plainpages = {false},
 pageanchor={false},
