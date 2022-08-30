@@ -75,14 +75,14 @@ in agribusiness in order to help managers, through accurate information, your de
 
 % Centralizar titulos
 \renewcommand\contentsname{\centerline{Sumário}}
-% \renewcommand\listfigurename{\centerline{Lista de Figuras}}
+\renewcommand\listfigurename{\centerline{Lista de Figuras}}
 % \renewcommand\listtablename{\centerline{Lista de Tabelas}}
 
 \lhead{Sumário}
 \tableofcontents
 
-% \listoffigures
-% \addcontentsline{toc}{chapter}{Lista de Figuras}
+\listoffigures
+\addcontentsline{toc}{chapter}{Lista de Figuras}
 
 % \listoftables
 % \addcontentsline{toc}{chapter}{Lista de Tabelas}
@@ -382,7 +382,7 @@ tomada visando a fácil expansão e utilização da ferramenta desenvolvida.
 
 O primeiro passo tomado foi configurar o ambiente onde a planta será observada para que o 
 Raspberry e seus sensores obtenham os  dados necessários, estes então serão enviados para a 
-nuvem (foi configurado uma instância no Firebase - BaaS do Google), onde fica facilmente acessível 
+nuvem (foi configurado uma instância no Firebase $-$ BaaS do Google), onde fica facilmente acessível 
 para os dispositivos inteligentes se comunicarem, promovendo então uma experiência em tempo real, 
 onde qualquer alteração na planta surtirá em informações atualizadas no app, facilitando a vida 
 do agricultor.
@@ -391,14 +391,35 @@ do agricultor.
 Esta é a tela inicial do aplicativo, onde o usuário poderá se cadastrar ou fazer login com 
 os dados válidos (Figura I). Suas informações estarão guardadas junto dos dados da planta.
 
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-i.jpg}}
+\caption{Figura I}\label{fig-i}
+\end{figure}
+
 Na Figura II, após ter entrado com seus dados, é possível verificar que o usuário já possui 
 acesso às informações relevantes, além da sugestão de tomada de decisão sobre a irrigação manual da planta.
+
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-ii.jpg}}
+\caption{Figura II}\label{fig-ii}
+\end{figure}
 
 Ao tocar em alguns dos tiles (quadrado com informação) o usuário é redirecionado para outra tela 
 contendo informações mais detalhadas.
 
 Nestes dois exemplos ao lado, nas figuras III e IV, é possível observar o detalhamento do sensor 
 de temperatura e umidade da planta, e do sensor de umidade do solo, respectivamente.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-iii.jpg}}
+\caption{Figura III}\label{fig-iii}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-iv.jpg}}
+\caption{Figura IV}\label{fig-iv}
+\end{figure}
 
 Os dados são dinamicamente recuperados da nuvem, e qualquer informação gerada pelo sensores será 
 atualizada em tempo real no aplicativo.
@@ -412,11 +433,21 @@ Na Figura V é possível notar os dados de previsão do tempo para  a localizaç
 da mesma maneira, estão presentes informações relevantes, como a porcentagem de umidade do 
 solo atual,  para que o usuário entenda o processo de tomada de decisão.
 
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-v.jpg}}
+\caption{Figura V}\label{fig-v}
+\end{figure}
+
 Na Figura VI, a tela de informações da irrigação automática é mostrada ao usuário quando ele clica 
 em seu respectivo tile, onde um log evidencia a hora de registro e a situação em que a opção estava 
 no momento, fornecendo informações precisas ao usuário. Estas informações complementam-se com a da 
 tela inicial, na área de “Histórico de irrigação”, onde é informado a quantidade de vezes que a 
 irrigação foi ativada para a planta, por dia e nos últimos sete dias (observar na figura II).
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-vi.jpg}}
+\caption{Figura VI}\label{fig-vi}
+\end{figure}
 
 Nas figuras abaixo, estão presentes as informações sucintas que são mostradas ao usuário dependendo 
 da condição metereológica do dia e da condição de temperatura e umidade da planta. Gerando uma 
@@ -427,6 +458,21 @@ planta está em um nível de umidade do solo moderado, mas a previsão é que ch
 fazendo com que seja desnecessária a irrigação manual, assim, economizando água. E por fim, o caso 
 da Figura IX acontece quando a planta oferece um baixo nível de umidade do solo, e as condições 
 climáticas não são favoráveis a mantê-la sem água pelas próximas horas.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-vii.jpg}}
+\caption{Figura VII}\label{fig-vii}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-viii.jpg}}
+\caption{Figura VIII}\label{fig-viii}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.25]{Figuras/figura-ix.jpg}}
+\caption{Figura IX}\label{fig-ix}
+\end{figure}
 
 \chapter{Considerações Finais}\label{chap:consideracoes}
 
