@@ -25,7 +25,7 @@
 \selectlanguage{portuguese}
 
 \empresaNome{Universidade Federal do Agreste de Pernambuco}
-\empresaArea{Desenvolvimento mobile}
+\empresaArea{Desenvolvimento Mobile}
 \empresaPeriodo{01 de agosto de 2019 a 01 de julho de 2020}
 \empresaCargaH{20H}
 \empresaRemuneracao{R\$ 0,00}
@@ -75,17 +75,17 @@ in agribusiness in order to help managers, through accurate information, your de
 
 % Centralizar titulos
 \renewcommand\contentsname{\centerline{Sumário}}
-\renewcommand\listfigurename{\centerline{Lista de Figuras}}
-\renewcommand\listtablename{\centerline{Lista de Tabelas}}
+% \renewcommand\listfigurename{\centerline{Lista de Figuras}}
+% \renewcommand\listtablename{\centerline{Lista de Tabelas}}
 
 \lhead{Sumário}
 \tableofcontents
 
-\listoffigures
-\addcontentsline{toc}{chapter}{Lista de Figuras}
+% \listoffigures
+% \addcontentsline{toc}{chapter}{Lista de Figuras}
 
-\listoftables
-\addcontentsline{toc}{chapter}{Lista de Tabelas}
+% \listoftables
+% \addcontentsline{toc}{chapter}{Lista de Tabelas}
 
 \inicio\chapter{Introdução}
 
@@ -168,17 +168,206 @@ As atividades de PIC/ESO foram iniciadas em 01/08/2019; e concluídas no dia 01/
 carga horária diária de 4 horas, totalizando 20 horas semanais, que resultaram em horas ao
 final do PIC/ESO\@.
 
-\chapter{Fundamentação teórica}
-\label{chap:fundamentacao}
+\chapter{Metodologia}\label{chap:metodologia}
+Neste estudo, entende-se que a realidade deve ser interpretada, e não reduzida. Mas para isso 
+ocorrer deve-se apreendê-la a partir de sua totalidade. Desta forma será utilizada para esta 
+pesquisa a abordagem do tipo exploratória. A pesquisa exploratória permite maior aproximação 
+do pesquisador com o objeto investigado, além de possibilitar a coleta de informações sobre 
+determinado tema, contribui para aprofundar conceitos ainda preliminares, permitir construir 
+as respostas ou refutar as hipóteses levantadas inicialmente pelo investigador. Seu principal 
+objetivo é o aprimoramento das ideias e o seu planejamento flexível, permitindo que se considere 
+a variedade de aspectos identificados em relação ao fato estudado (GIL, 2008). 
+Este tipo de pesquisa visa prover o pesquisador de um maior conhecimento sobre o tema ou 
+problema de pesquisa e, por isso, é apropriada para os primeiros estágios da investigação, 
+quando a familiaridade, o conhecimento e a compreensão do fenômeno, por parte do pesquisador, 
+são geralmente insuficientes ou inexistentes (MATTAR, 1994).
+	
+Com a finalidade de responder aos objetivos específicos será utilizada a pesquisa bibliográfica 
+que é o levantamento de um determinado tema, processado em bases de dados nacionais e internacionais 
+que contêm artigos de revistas, livros, teses e outros documentos (GIL,2008) com a finalidade de 
+subsidiar o pesquisador com o conhecimento necessário para analisar as novas possibilidades geradas 
+pela Internet das Coisas para o agronegócio.
+	
+Após a fase de coleta de dados será possível ser feita a análise de dados, a partir, dessa análise 
+documental e relacionar as novas possibilidades ocasionadas pela inserção da internet das coisas.
+	
+Posteriormente, com base nos conhecimentos adquiridos, será desenvolvido uma aplicação com a 
+utilização de um raspberry que é um minicomputador, semelhante ao PC ou a notebook. A principal 
+diferença é que este dispositivo é compacto e possui todos os principais componentes de um 
+computador numa pequena placa do tamanho de um cartão de crédito e, com isto permitirá ao 
+pesquisador uma aproximação aos dispositivos de IoT atualmente utilizados nas organizações. 
+E para simular um ambiente de uma fazenda será utilizado um sensor de umidade de solo que tem 
+a função de detectar as variações de umidade no solo, sendo que quando o solo está seco a saída 
+do sensor fica em estado alto, e quando úmido em estado baixo.
+	
+Para isto, será desenvolvida uma aplicação que coletará esses dados e fornecerá informações para 
+a tomada de decisão dos gestores para uma boa gestão do agronegócio.
+	
+Inicialmente, a aplicação a ser desenvolvida estará predisposta a dar dados regulares sobre a 
+plantação e o clima onde os sensores estão localizados, então, além do sensor de umidade do solo, 
+haverá um sensor de temperatura e umidade que incrementará esta coleta de dados, da mesma maneira 
+que uma breve consulta sobre o clima atual da região fornecerá informações que serão tratadas 
+posteriormente para tomadas de decisão.
 
-Nesta
+\chapter{Fundamentação teórica}\label{chap:fundamentacao}
 
-\chapter{A proposta do trabalho}
-\label{chap:sistema}
-A proposta deste trabalho
+\section{Internet das Coisas}
+O termo Internet of Things (IoT) foi introduzido em 1999 por Kevin Ashton, 
+co-fundador do Auto-ID Center do Massachusetts Institute of Technology (MIT). 
+Segundo Ashton (2009), a ideia original da IoT previa a conexão de todos os objetos 
+físicos à Internet, com capacidade de capturar informações por meio de identificação 
+por radiofrequência (RFID) e tecnologias de sensoriamento –as quais os permitiriam observar, 
+identificar e compreender o mundo independentemente das pessoas e suas limitações de tempo, 
+atenção e precisão.
 
-\chapter{Considerações Finais}
-\label{chap:consideracoes}
+Em 2005, a União Internacional de Telecomunicações (UIT) previu que a possibilidade de 
+identificação única de itens, associada a tecnologias de sensores e a capacidade de interagir 
+com o ambiente criaria uma Internet das Coisas (ITU-T, 2016). 
+	
+De acordo com Davis (2017) ocorreu quatro estágios de evolução da Internet – Web 1.0, voltada 
+para a conexão e obtenção de informações na Rede; Web 2.0 ou Web Social, caracterizada pela 
+preocupação com a experiência do usuário e a colaboração por meio das redes sociais; 
+Web 3.0 ou Web Semântica, com esforços concentrados na atribuição de significado e contexto 
+às informações; e o estágio atual, a Web Ubíqua, constituída pela Internet das Coisas (IoT), 
+fundamentada pela conectividade e interatividade entre pessoas, informações, processos e objetos, 
+por meio de tecnologias que possibilitam acesso à rede por qualquer pessoa, de qualquer lugar, 
+a qualquer tempo, utilizando quaisquer dispositivos, incluindo equipamentos multifuncionais com 
+sensores inteligentes, tais como eletrodomésticos, automóveis, roupas, etc., a partir de 
+aplicações que se adaptam dinamicamente às necessidades dos usuários (DAVIS, 2017). 
+	
+Por causa disto, o mundo físico está se tornando um grande ecossistema de informação em que 
+os objetos tanto podem sentir o ambiente como se comunicar independentemente de intervenções humanas. 
+Assim, esses objetos tornam-se participantes ativos nos processos de negócio e passam a ser 
+reconhecidos e identificados em ambientes inteligentes, que geram informações na Internet, 
+promovendo sua funcionalidade adaptativa e responsiva (WEBER, 2015).
+	
+Desta forma, a IoT afeta a humanidade em diferentes escalas e envolve desde nanochips implantados 
+em seres vivos a objetos de uso comum interconectados, equipados com sensores e identificados 
+e que capazes de trocar informações com as pessoas ou com o ambiente. Em face disto, cidades 
+estão sendo projetadas de maneira totalmente conectada e automatizada (as chamadas smart cities 
+ou cidades inteligentes). As formas de manifestação da IoT são heterogêneas, incluindo dispositivos 
+de múltiplos propósitos (celulares, tablets, relógios e óculos inteligentes) e dispositivos 
+especializados (sensores de temperatura, dispositivos ativos e passivos, etc.), suportados por 
+uma variedade de plataformas de software e hardware. Por isso, o desafio de projetar espaços na 
+IoT é contemplar os diferentes níveis de granularidade de forma transparente, garantindo a 
+interoperabilidade.
+	
+Em face dessas mudanças, as inovações que surgem no âmbito da IoT ampliam o potencial humano 
+em diversas áreas tais como planejamento urbano (cidades, edifícios e transito inteligentes), 
+meio ambiente (energia, água), indústria, comércio, turismo, educação, saúde, trabalho, 
+segurança, programas sociais, governo e agronegócio, promovendo soluções capazes de 
+desenvolvimento econômico, sustentabilidade e qualidade de vida.
+
+\section{Gestão de agronegócios}
+De acordo com Saab, Neves e Cláudio (2009), o termo agronegócio (agribusiness em inglês) teve 
+sua origem na Universidade de Harvard e propõe uma visão sistêmica do funcionamento das atividades 
+ligadas à agropecuária. 
+
+Ainda conforme esses autores, o agronegócio é formado por vários sistemas agroindustriais  
+associados  aos  principais  produtos,  incluindo  todas  as  fases  de  produção até o 
+consumidor final. Segundo Reis (2017),os sistemas agroindustriais podem ser divididos em 
+três segmentos: (i) setor a montante – responsável por insumos e por bens de capital para a agropecuária; 
+(ii) agropecuária – responsável pela produção dos produtos; e 
+(iii) setor a jusante – responsável pela industrialização e distribuição.
+	
+No atual contexto, o agronegócio, em termos mundiais, demonstra ser muito importante tanto 
+econômica quanto socialmente. Conforme a Food And Agriculture Organization Of The United Nations (FAO), 
+cerca de 1,02 bilhões de pessoas sofrem com a fome crônica no mundo atualmente (FAO, 2018). 
+Essa organização ainda destaca que um dos grandes desafios do agronegócio no futuro será o de 
+alimentar uma população projetada de 9,2 bilhões de pessoas em 2050.
+
+A FAO (2018) ainda destaca que os principais desafios da produção do agronegócio poderiam ser 
+divididos em: (a) mudanças nos hábitos alimentares da população; (b) mudanças climáticas; 
+(c) desenvolvimento da bioenergia; e (d) escassez dos recursos naturais. Apesar dos desafios 
+inerentes ao agronegócio, algumas informações ao redor do mundo indicam estatísticas favoráveis 
+e que podem ser exploradas pelos gestores nas diversas cadeias agroindustriais.
+    
+Vale salientar que essas estatísticas estão relacionadas a países em desenvolvimento, 
+tais como o Brasil, a Índia, a Rússia e a China (FULLER et al., 2016) e pode-se dizer que a 
+posição do Brasil no que tange ao agronegócio, em geral, é muito favorável além de que o 
+agronegócio é muito importante para a economia brasileira. Nesse sentido, Lourenço (2016) 
+afirma que o agronegócio brasileiro é um dos principais setores da economia nacional, conseguindo 
+atingir posição  de  destaque  mesmo  em  condições  desiguais  de  competição.
+
+Considerando  todo  o  contexto  apresentado,  parece  importante  que  os  gestores  das 
+organizações  relacionadas  ao  agronegócio  tenham  a  capacidade  de  gerir seus negócios 
+de forma adequada, obtendo os benefícios dessa provável expansão brasileira, assim como 
+minimizando os riscos de suas atividades. Pode-se dizer que a gestão dessas organizações 
+se situa atualmente em um contexto de aumento da competitividade nos vários segmentos do 
+agronegócio em nível mundial (REARDON et al., 2015). Nesse sentido, Fischer et al (2018) destacam 
+que  a  maioria  dos  consumidores  ao  redor  do  mundo  pode  escolher  entre uma grande 
+variedade de produtos relacionados às cadeias agroindustriais, sendo que milhares de novos 
+produtos são inseridos no mercado todos os anos, fazendo com que a competitividade dos negócios 
+se torne cada vez mais forte.
+
+\section{A tecnologia e o agronegócio}
+Na atualidade, percebe-se  que diversos setores que envolvem a agricultura brasileira tem utilizado 
+cada vez mais tecnologias na busca do incremento de mais produtividade. Conforme relatório da 
+empresa DATUM (2016), muitas empresas de Tecnologia da Informação geraram confiabilidade na realização 
+de projetos direcionados à melhoria dos sistemas de produção agrícola, pois com o auxílio tecnológico 
+e a evolução da economia, a produção agrícola ficou mais prática e ágil.
+
+Segundo o ministério da agricultura, pecuária e abastecimento, o Brasil é um dos principais 
+fornecedores agrícolas do mundo e o agronegócio representa 1/3 do PIB brasileiro, tendo grande 
+relevância para a economia do país (MAPA, 2017).
+
+Desta forma, a tecnologia da informação pode agregar valor a esse mercado criando soluções 
+inteligentes para gerar eficácia e melhoria dos processos internos, assertividade no controle da 
+produção e agilidade na comercialização, além de evitar desperdício de recursos naturais, como 
+por exemplo, o gerenciamento da irrigação no plantio por meio de dispositivos que monitoram o 
+volume de água (DATUM, 2016).
+
+Nesse contexto, Cócaro e Jesus (2018) afirmam que como ocorreu no setor urbano, às novas 
+tecnologias da informação estão sendo aplicadas ao agronegócio e integrando-se velozmente entre si, 
+como por exemplo, as tecnologias de informação com as tecnologias de controle; as tecnologias de 
+monitoramento com as tecnologias de telecomunicações que estão fundindo-se rapidamente e aumentando 
+os recursos e resultados.
+
+Deste modo é evidente que o setor de tecnologia da informação surge como uma ferramenta de 
+desenvolvimento econômico, por possuir resultados confiáveis com rapidez e eficiência que 
+indica maior produção e, por consequência, maior retorno financeiro. Assim, a tecnologia da 
+informação no agronegócio é vista como um diferencial econômico, uma vez que consegue proporcionar 
+vantagens competitivas (IAGRAN, 2015).
+
+De acordo Mendes (2015), o agronegócio vem se tornando importante e influente na economia 
+brasileira, por se tratar de algo dinâmico e competitivo. Mas essas características são devidas 
+ao fato de estarem correlacionadas com a tecnologia da informação e suas ferramentas de apoio que, 
+por meio da utilização de softwares específicos em cada área está sendo capaz de precaver erros 
+e enfatizar acertos, de forma a viabilizar e agilizar o processo final de entrega.
+
+Assim, a manutenção e o fortalecimento da capacidade de gerar inovações representa um desafio 
+que se impõe para o futuro das organizações. A geração de inovações tecnológicas para complexos 
+sistemas de produção agropecuária e a crescente atenção às dimensões econômica, ambiental e 
+social exigirão novas estratégias de pesquisa e transferência de tecnologia, além da ampliação 
+de arranjos e parcerias com entidades públicas e privadas no Brasil e no exterior. 
+Entre as diversas estratégias para enfrentar esses desafios, destaca-se a utilização 
+intensa de tecnologias de informação e comunicação (KALSING, 2015).
+
+Neste sentido, são realizadas pesquisas e congressos para constatar a viabilidades e 
+assertividades das tecnologias nas empresas e dentro do agronegócio. Na busca de mapear 
+esta cadeia e verificar os pontos positivos e negativos, a internet é vista como uma importante 
+ferramenta capaz de permitir avanço e crescimento ao agronegócio, por oferecer recursos que 
+auxiliam no aumento comercial do mercado. Por meio de instrumentação avançada, agropecuária de 
+precisão, bioinformática, data-mining, geotecnologias, modelagem, plataformas web de 
+transferência tecnológica, entre outras tecnologias, são disponibilizados instrumentos e 
+vertentes de inovação para o agronegócio (KALSING, 2015).
+
+De acordo com TACCHI (2017), dentre as ferramentas para gestão administrativa a Internet 
+auxilia na distribuição da importância do uso das tecnologias na vida rural. Hoje os portais 
+agropecuários disponibilizam informações sobre as produções, sobre os bancos de dados, sobre 
+os softwares utilizados, e fazem a ligação que leva a aquisição dessas ferramentas que permite 
+a troca de informação. Segundo o autor, diante da volume de conteúdos é necessário saber gerir 
+a informação e o conhecimento em favor da inovação, da sustentabilidade e da vantagem competitiva. 
+Com auxílio da tecnologia, pode-se utilizar o meio mais objetivo, rápido e eficaz de modo a 
+disponibilizar informação para gerar conhecimento, oportunidades e negócios. 
+
+Porém, toda essa tecnologia deve ser analisada, estudada e introduzida com cuidado, 
+pois segundo Noronha e Peres (2015), o valor final das decisões tomadas de forma incorreta, 
+é muito maior que o aumento da tecnologia e da competitividade no mercado. 
+O avanço da internet tem crescido, auxiliando na quebra de barreiras, encurtando distâncias e 
+por fim tem aproximado o produtor rural e o agro negociador de toda essa tecnologia de forma mais rápida.
+
+\chapter{Considerações Finais}\label{chap:consideracoes}
 
 Esta pesquisa tinha como objetivo avaliar, entender e solucionar lacunas encontradas 
 no agronegócio com aplicações em Internet das Coisas, até agora, pude entender como está 
@@ -196,9 +385,9 @@ para o agronegócio.
 \bibliography{refs}
 \addcontentsline{toc}{chapter}{Referências Bibliográficas}
 
-\appendix
-\chapter{Apêndice}\label{ane:relatorio}
-Este é o Apêndice.
+% \appendix
+% \chapter{Apêndice}\label{ane:relatorio}
+% Este é o Apêndice.
 
 \end{document}
 
