@@ -5,20 +5,20 @@
 
 \titulo{RELATÓRIO DE ESTÁGIO SUPERVISIONADO OBRIGATÓRIO (ESO)}
 
-\palavrasChave{Automação}{Agilidade}{Auto atendimento}
-\keywords{keyword1, keyword2, keyword3.}
+\palavrasChave{Internet das Coisas}{Automação}{Agronegócio 4.0.}
+\keywords{Internet of Things, Automation, Agrobusiness 4.0.}
 
 \autor{Armstrong Lohãns de Melo Gomes Quintino}{lohansdemelo1108@gmail.com}
 
-\orientador{Nome Professor}{}{UFAPE}
-\orientadorDois{Nome Professor}{}{UFAPE}
+\orientador{Rodrigo Rocha}{Engenharia de Software}{UFAPE}
+% \orientadorDois{Nome Professor}{Para completar}{UFAPE}
 
 
-\examinador{John Hopcroft}{}{UFAPE}
-\examinadorDois{Richard Karp}{}{UFAPE}
-\examinadorTres{Stephen Cook}{}{UFAPE}
+\examinador{John Hopcroft}{Para completar}{UFAPE}
+\examinadorDois{Richard Karp}{Para completar}{UFAPE}
+\examinadorTres{Stephen Cook}{Para completar}{UFAPE}
 
-\dataMesAno{31}{maio}{2022}
+\dataMesAno{29}{agosto}{2022}
 
 \begin{document}
 
@@ -37,12 +37,39 @@
 % \capaDois
 
 \begin{resumo}
-Descrição do seu trabalho
+Na atualidade está ocorrendo um aumento na utilização de diversas tecnologias e que, 
+pelo aumento do seu uso, tem gerado um grande volume de informações. Esse aumento de 
+informação foi devido a utilização da internet e, principalmente, pela utilização de 
+diversos dispositivos que se comunicam. Por causa disso e pela inserção dessas tecnologias 
+o termo internet das coisas se tornou conhecido em diversas áreas. Desta forma, a proposta 
+deste projeto de pesquisa é ressaltar  a  importância  da Internet das Coisas e seus 
+impactos econômicos e sociais, por meio de uma revisão bibliográfica e estudos acerca 
+da Internet das Coisas aplicada no agronegócio bem como o desenvolvimento de uma aplicação 
+simulando uma situação real. E para atingir a finalidade desses impactos diversas bases 
+foram utilizadas a fim de embasar o conhecimento sobre a relação entre o paradigma da 
+IoT aplicada ao agronegócio, sendo utilizada a pesquisa bibliográfica para este fim. 
+Deste modo, o presente trabalho propõe-se a desenvolver uma aplicação simulando uma 
+situação real além de compreender o impacto do uso da Internet das Coisas no agronegócio 
+com o propósito de auxiliar aos gestores, por meio de informações precisas, o seu processo 
+de tomada de decisão.
 \end{resumo}
 
 \selectlanguage{english}
 \begin{abstract}
-Works Description
+Currently, there is an increase in the use of various technologies and, due to 
+the increase in their use, they have generated a large volume of information. 
+This increase in information was due to the use of the internet and, mainly, 
+the use of various devices that communicate. Because of this and the insertion 
+of these technologies, the term internet of things has become known in several areas. 
+Thus, the purpose of this research project is to emphasize the importance of the 
+Internet of Things and its economic and social impacts, through a literature review 
+and studies on the Internet of Things applied in agribusiness as well as the development 
+of an application simulating a situation real. And to achieve the purpose of these impacts, 
+several bases were used in order to base knowledge about the relationship between 
+the IoT paradigm applied to agribusiness, using bibliographic research for this purpose. 
+In this way, the present work proposes to develop an application simulating a real 
+situation in addition to understanding the impact of the use of the Internet of Things 
+in agribusiness in order to help managers, through accurate information, your decision-making process.
 \end{abstract}
 \selectlanguage{portuguese}
 
@@ -63,11 +90,68 @@ Works Description
 \inicio
 \chapter{Introdução}
 
-Texto
+O Brasil, na atualidade, é um dos maiores produtores de alimento do mundo, com potencial para 
+ser o maior produtor mundial pelo fato de dispor de vários recursos, principalmente climáticos, 
+que favorecem a vasta produção de alimentos.
+
+Além do fator climático, o Brasil apresenta quantidade de água considerável e potencial de 
+mais áreas agricultáveis, pois atualmente se utiliza apenas 7,3\% dessas áreas.Associado a isso, 
+há mais investimentos em tecnologia, o que difere positivamente nos valores de produção alcançados.
+
+O incremento na utilização de tecnologias se deve ao fato da inserção do termo indústria 4.0, 
+surgida na Alemanha, onde, resumidamente, considera-se que a tecnologia digital aplica-se em todos 
+os aspectos da sociedade. Desta forma, a agricultura seguiu o termo e se intitula agricultura 4.0, 
+pois a mesma se beneficia dos avanços tecnológicos a fim de suprir e melhorar suas necessidades 
+de produção na busca de encontrar novas formas de tornar o negócio mais eficiente e competitivo.
+
+Assim, essa nova era agricultura 4.0 trouxe consigo novos questionamentos e, principalmente, 
+houve o aumento da preocupação em utilizar o mínimo possível dos recursos naturais e continuar 
+produzindo cada vez um volume maior que uma região possa oferecer. Logo, a indústria 4.0 surge 
+como uma aliada para otimizar esse sistema e proporcionar essas melhorias.
+
+Diante desse cenário, verifica-se que o Brasil ocupa a posição de 2º maior produtor de alimentos 
+do planeta, depois dos Estados Unidos. Uma pesquisa feita em 2017 pela Comissão Brasileira de 
+Agricultura de Precisão (CBAP), vinculada ao Ministério da Agricultura, constatou que 67\% das 
+propriedades agrícolas do país já utilizam algum tipo de tecnologia na área de gestão do negócio 
+e nas atividades de cultivo e colheita da produção. Desta forma, a produção agroindustrial é 
+e continua sendo uma válvula de escape fundamental contra a crise econômica que atingiu o Brasil 
+nos últimos anos. Em 2015, o setor empregava 19 milhões de pessoas. No ano seguinte, houve aumento 
+em cerca de 75 mil novos empregos, segundo dados da Confederação da Agricultura e Pecuária do Brasil 
+(CNA) e do Centro de Estudos Avançados em Economia Aplicada (CEPEA).
+
+Ou seja, para possibilitar o agronegócio 4.0 foi necessário conectar coisas com a internet que 
+foi chamado de Internet das Coisas (IoT). Desde então, a Internet das Coisas vem se difundindo 
+nos mais diferentes ambientes, do meio empresarial ao cotidiano do homem comum estando presente 
+nos mais diversos dispositivos que possuem conexão com a internet. Um ponto importante, 
+destacado na literatura, é que a IoT tem o potencial de criar um impacto econômico de 
+US\$ 2,7 trilhões para US\$ 6,2 trilhões até 2025. Alguns dos usos mais promissores são os 
+cuidados com a saúde, as infraestruturas e os serviços do setor público, ajudando a sociedade 
+a enfrentar alguns dos seus maiores desafios. (MANYIKA et al., 2013, p. 51).
+
+A partir destes fatos, o objetivo geral deste projeto de pesquisa é apresentar um panorama 
+sobre novas possibilidades da IoT dentro do setor do agronegócio e, em específico, 
+contextualizar a IoT de forma a levantar, relacionar e fazer uma análise preliminar dessas 
+novas possibilidades.Além disso, ressaltar  a  importância  da Internet das Coisas e seus 
+impactos econômicos e sociais,  por meio de uma revisão bibliográfica e estudos acerca da 
+Internet das Coisas aplicada no agronegócio bem como o desenvolvimento de uma aplicação 
+simulando uma situação real.
+
 
 \section {Objetivo}
 
-O objetivo geral
+\begin{enumerate}
+    \item Geral\\
+    O objetivo deste projeto é analisar as novas possibilidades geradas pela Internet das Coisas para o agronegócio
+    \item Específico
+    \begin{enumerate}
+        \item[$-$]  Entender a estrutura da internet das coisas
+        \item[$-$] Entender o agronegócio
+        \item[$-$] Levantar as novas possibilidades com o uso da Internet das Coisas
+        \item[$-$] Relacionar as novas possibilidades pela IoT para o agronegócio 
+        \item[$-$] Fazer uma análise preliminar dessas novas possibilidades
+        \item[$-$] Desenvolver um aplicativo simulando uma situação real
+    \end{enumerate}
+\end{enumerate}
 
 
 \section{Justificativa}
