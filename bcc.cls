@@ -246,6 +246,7 @@
     \begin{center}
         \Large
         \@autorNome\\
+        \vspace*{1cm} \LARGE \textbf{\@tituloProjeto}\\
         \vspace*{3cm} \LARGE \textbf{\@titulo} \\%
     \end{center}
     \vspace*{2cm}
@@ -563,6 +564,12 @@
 %%------------------------------------------------------------------------------
 \newcommand{\@titulo}{}
 \newcommand{\titulo}[1]{\renewcommand{\@titulo}{#1}}
+
+%%------------------------------------------------------------------------------
+%% Definição do comando TITULO DO PROJETO
+%%------------------------------------------------------------------------------
+\newcommand{\@tituloProjeto}{}
+\newcommand{\tituloProjeto}[1]{\renewcommand{\@tituloProjeto}{#1}}
 
 %%------------------------------------------------------------------------------
 %% Definição do comando DATA
