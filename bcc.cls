@@ -46,6 +46,7 @@
 \RequirePackage[active]{srcltx} % Busca inversa do dvi para o tex
 \RequirePackage{ifthen} % Utilização de condicionais em latex
 \RequirePackage{xparse}
+\usepackage{etoolbox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Modificações Avançadas %%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{amsmath} %
@@ -188,7 +189,12 @@
         \end{figure}
      \vspace*{0.2cm} \large UNIVERSIDADE FEDERAL DO AGRESTE DE PERNAMBUCO \\
       \vspace*{4.5cm} \large  \textbf{\MakeUppercase \@autorNome} \\%
-      \vspace*{4cm} \Large \textbf{\@titulo} \\%
+      \ifdefempty{\@tituloProjeto}{
+        \vspace*{4cm} \Large \textbf{\@titulo} \\%
+      }{
+        \vspace*{4cm} \Large \MakeUppercase{\textbf{\@tituloProjeto}} \\~\\%
+        \normalsize \textbf{\@titulo} \\%
+      }
       \normalsize \vfill GARANHUNS \\
       \vspace*{.3cm} \@ano \\
       \vspace*{1.8cm}
